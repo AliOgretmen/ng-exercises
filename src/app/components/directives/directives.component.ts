@@ -22,8 +22,11 @@ import { Component, OnInit } from '@angular/core';
       <div *ngSwitchCase="'blue'">Blue Color</div>
       <div *ngSwitchDefault>Choose Again</div>
       </div>
-
-      
+      <div *ngFor="let item of colors; index as i"><h3>{{i}}  {{item}}</h3></div>
+      <div *ngFor="let item of colors; first as f"><h3>{{f}}  {{item}}</h3></div>
+      <div *ngFor="let item of colors; last as l"><h3>{{l}}  {{item}}</h3></div>
+      <div *ngFor="let item of colors; odd as o"><h3>{{o}}  {{item}}</h3></div>
+      <div *ngFor="let item of colors; even as e"><h3>{{e}}  {{item}}</h3></div>
       `,
   styles: []
 })
@@ -31,7 +34,9 @@ export class DirectivesComponent implements OnInit {
 
   headerName = false;
 
-  color= "blue";
+  public color= "blue";
+
+  public colors = ["blue", "yellow", "red", "green"]
 
   constructor() { }
 
