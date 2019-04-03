@@ -16,6 +16,13 @@ import { Component, OnInit } from '@angular/core';
       <ng-template #elseBlock>
        <h3>Else Block</h3>
       </ng-template>
+      <div [ngSwitch]="color">
+      <div *ngSwitchCase="'red'">Red Color</div>
+      <div *ngSwitchCase="'green'">Green Color</div>
+      <div *ngSwitchCase="'blue'">Blue Color</div>
+      <div *ngSwitchDefault>Choose Again</div>
+      </div>
+
       
       `,
   styles: []
@@ -23,6 +30,8 @@ import { Component, OnInit } from '@angular/core';
 export class DirectivesComponent implements OnInit {
 
   headerName = false;
+
+  color= "blue";
 
   constructor() { }
 
