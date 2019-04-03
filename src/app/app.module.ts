@@ -7,6 +7,7 @@ import { ListComponent } from './components/list/list.component';
 import { DecoratorsComponent } from './components/decorators/decorators.component';
 import { ClassBindingComponent } from './components/class-binding/class-binding.component';
 import { EventBindingComponent } from './components/event-binding/event-binding.component';
+import { TempRefComponent } from './components/temp-ref/temp-ref.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { EventBindingComponent } from './components/event-binding/event-binding.
     ListComponent,
     DecoratorsComponent,
     ClassBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    TempRefComponent
   ],
   imports: [
     BrowserModule,
