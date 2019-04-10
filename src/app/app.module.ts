@@ -12,6 +12,9 @@ import { TempRefComponent } from './components/temp-ref/temp-ref.component';
 import { TwoWayComponent } from './components/two-way/two-way.component';
 import { from } from 'rxjs';
 import { DirectivesComponent } from './components/directives/directives.component';
+import { CompInterComponent } from './components/comp-inter/comp-inter.component';
+import { CompChildComponent } from './components/comp-child/comp-child.component';
+import { MainComponent } from './components/main/main.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { DirectivesComponent } from './components/directives/directives.componen
     EventBindingComponent,
     TempRefComponent,
     TwoWayComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    CompInterComponent,
+    CompChildComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
